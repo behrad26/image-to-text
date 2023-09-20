@@ -7,5 +7,5 @@ open(txt, "w").close()
 with open(txt, "a") as file:
     for row in imread(image):
         for pixel in row:
-            file.write(chars[ceil(sum(pixel) / 3)])
+            file.write(chars[ceil(sum(pixel) / 3)] " ")
         file.write("\n")
